@@ -1,6 +1,9 @@
 🎵 Sonic Sorter (Music Library Organizer) 
+
 VERSION 4.0
+
 Author: Zephyr-Azurewolf
+
 Language: Python 3.x
 
 A high-performance automated music organizer that scans audio files and sorts them into "Warm" (Analog/Organic) or "Cold" (Digital/Mechanical) directories based on there metadata.
