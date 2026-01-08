@@ -34,8 +34,6 @@ pip install mutagen tqdm
 1. The Genre Lists (config.py)
 The sorting logic relies on a local configuration file named config.py. This file must contain two lists: warm_list and cold_list.
 
-Python
-
 # config.py example
 
 warm_list = [
