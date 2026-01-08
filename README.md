@@ -4,11 +4,12 @@ VERSION 4.0
 
 Author: Zephyr-Azurewolf
 
-Language: Python 3.x
+Language: Python3
 
 A high-performance automated music organizer that scans audio files and sorts them into "Warm" (Analog/Organic) or "Cold" (Digital/Mechanical) directories based on metadata.
 
 ✨ Features
+
 Intelligent Regex Matching: Uses a custom "flexible separator" logic. It correctly identifies genres regardless of formatting (e.g., matching "Hip Hop" against Hip-Hop, Hip&Hop, or Hip/Hop).
 
 Whole-Word Precision: Prevents substring collisions. "Pop" will match Pop but will not accidentally steal Synthpop or K-Pop.
@@ -20,6 +21,7 @@ Format Support: Automatically handles .mp3 (ID3) and .flac (Vorbis) metadata.
 Non-Destructive: Copies files to the new destination, preserving your original Master Library.
 
 🛠️ Prerequisites
+
 You need Python 3.6+ and the following external libraries:
 
 mutagen: For reading audio metadata.
@@ -27,11 +29,15 @@ mutagen: For reading audio metadata.
 tqdm: For the progress bar interface.
 
 Installation
+
 Bash
 
 pip install mutagen tqdm
+
 ⚙️ Configuration
+
 1. The Genre Lists (config.py)
+
 The sorting logic relies on a local configuration file named config.py. This file must contain two lists: warm_list and cold_list.
 
 # config.py example
@@ -74,7 +80,6 @@ Result: A config entry for "Hip Hop" will successfully catch file tags like Hip-
 Boundary Protection: It uses Lookarounds (?<!\w) to ensure it only matches whole words, preventing "Pop" from matching "Pope" or "Synthpop".
 
 📂 Project Structure
-Plaintext
 
 /Sorting_Project
 │
