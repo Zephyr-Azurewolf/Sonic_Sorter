@@ -6,7 +6,7 @@ Author: Zephyr-Azurewolf
 
 Language: Python 3.x
 
-A high-performance automated music organizer that scans audio files and sorts them into "Warm" (Analog/Organic) or "Cold" (Digital/Mechanical) directories based on there metadata.
+A high-performance automated music organizer that scans audio files and sorts them into "Warm" (Analog/Organic) or "Cold" (Digital/Mechanical) directories based on metadata.
 
 ✨ Features
 Intelligent Regex Matching: Uses a custom "flexible separator" logic. It correctly identifies genres regardless of formatting (e.g., matching "Hip Hop" against Hip-Hop, Hip&Hop, or Hip/Hop).
